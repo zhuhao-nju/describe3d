@@ -1,0 +1,5 @@
+trimesh
+opencv-python
+click
+redner-gpu
+requests
