@@ -42,9 +42,11 @@
 
 ```
 python main.py --name="your model name" --descriptions="the description of the face you want to generate." --prompt="the abstract descriptions"
+```
 
-## Here are some examples we showed in the result folder.
+Here are some examples we showed in the result folder.
 
+```
 python main.py --name="Stark" --descriptions="This middle-aged man is a westerner. He has big and black eyes with the double eyelid. He has a medium-sized nose with a high nose bridge. His face is square and medium. He has a dense and black beard." --prompt="Tony Stark."
 
 python main.py --name="food" --descriptions="This young man is a westerner. His face is long and thin. He has big and round eyes. His nose is big with a high nose bridge. He has medium width mouth. He has no beard." --prompt="a man ate too much unhealthy food"
@@ -52,6 +54,5 @@ python main.py --name="food" --descriptions="This young man is a westerner. His 
 python main.py --name="old" --descriptions="This young man is a westerner. His face is oval and medium. He has big and round eyes. His nose is medium-sized with a high nose bridge. He has no beard." --prompt="He is a grandfather." 
 
 python main.py --name="makeup" --descriptions="This girl is Asian. She has small and slender eyes with single eyelid. Her nose is small and wide. Her face is heart-shaped and medium." --prompt="a girl with makeup" 
-
 ```
 
