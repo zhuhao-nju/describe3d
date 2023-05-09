@@ -224,40 +224,6 @@ def gen_full_mesh(opt):
     ## Text Parser: generate ont-hot code
     all_label,shape_label,texture_label = gen_onehot(opt,text=opt.descriptions)
 
-    new_map_dict = {'race': ['Asian', 'Western people', 'Black people'],
-                    'gender': ['male', 'female'],
-                    'age': ['child', 'young', 'middle-aged', 'old'],
-                    'eye_shape': ['almond', 'round', 'drooping', 'upturned', 'squinted', 'triangle', 'slender',
-                                  'sunken'],
-                    'eye_distance': ['wide', 'narrow', 'medium width'],
-                    'eye_size': ['big', 'small', 'medium sized'],
-                    'eyelid': ['single', 'double'],
-                    'nose_size': ['big', 'small', 'medium sized'],
-                    'nose_height': ['high', 'low', 'medium height'],
-                    'nasal_base_shape': ['straight', 'upturned', 'lowered'],
-                    'nose_width': ['wide', 'narrow', 'medium width'],
-                    'mouth_width': ['wide', 'narrow', 'medium width'],
-                    'lip_thickness': ['thick', 'thick upper', 'thick lower', 'thin', 'medium thickness'],
-                    'lip_shape': ['round', 'bow-shaped', 'heart-shaped', 'downward-turned'],
-                    'face_shape': ['oval', 'square', 'round', 'diamond', 'heart shaped', 'long'],
-                    'face': ['fat', 'thin', 'medium'],
-                    'pupil_color': ['black', 'brown', 'blue', 'amber', 'green', 'gray'],
-                    'eyebrow_shape': ['round', 'large angle', 'flat', 'small angle', 'S-shaped', 'sword-shaped'],
-                    'eyebrow_color': ['black', 'brown', 'gray'],
-                    'eyebrow_density': ['dense', 'sparse', 'medium'],
-                    'beard_yn': ['y', 'n'],
-                    'beard_density': ['dense', 'medium', 'sparse','none'],
-                    'beard_shape': ['moustache', 'stubble', 'whisker', 'beard', 'other beard','none'],
-                    'beard_color': ['black', 'gray','none']
-                    }
-
-    for i,key in enumerate(new_map_dict.keys()):
-        index = list(all_label[i,:]).index(1.0)
-        if index < len(new_map_dict[key]):
-            print(key,new_map_dict[key][index])
-        else:
-            print(key,"error")
-
     ## Concrete Synthesis
     ws, pred_param, Synthesis = concrete_synthesis(opt,shape_label,texture_label)
 
