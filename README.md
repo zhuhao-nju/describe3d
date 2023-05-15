@@ -47,7 +47,7 @@ python main.py --name="your model name" --descriptions="the description of the f
 Here is an example.
 
 ```python
-python main.py --name="Stark" --descriptions="This middle-aged man is a westerner. He has big and black eyes with the double eyelid. He has a medium-sized nose with a high nose bridge. His face is square and medium. He has a dense and black beard." --prompt="Tony Stark."
+python main.py --name="Stark" --descriptions="This middle-aged man is a westerner. He has big and black eyes with the double eyelid. He has a medium-sized nose with a high nose bridge. His face is square and medium. He has a dense and black beard." --prompt="Tony Stark." --lambda_latent=0.0003 --lambda_param=3
 ```
 The abstract synthesis results are affected by the regularization coefficient. Decrease lambda\_param / lambda\_latent when you want more changes of shape / texture. On the contrary, you can increase them.
 
