@@ -5,16 +5,16 @@ This is the official repository of ''High-fidelity 3D Face Generation from Natur
 ## Our pipeline
 ![image](images/4H6N9K0WdiC6cfKQtEMepnc6fKrtU5bdL_Bs3oB8Yrs.png)
 
+## Dataset
+To use the DESCRIBE3D dataset, you need to agree to our [License](./images/Describe3D_Dataset_License_Agreement.docx). Please sign the License and send the signed PDF to <nju3dv@nju.edu.cn>.
+After that, you can access the DESCRIBE3D dataset at [Google Drive](https://drive.google.com/file/d/1vmGCJFMAqqeH3aNNqSu3ZHxJs1FZbVBp/view?usp=drive_link).
+
 ## Visual Results
 ![image](images/mvoaaJPwWkVBGaVbY1ru6hbIIP9OkJiFYLKCCS65Sjk.png)
 
 **\[Updates\]**
 
 * 2023.05.04: Release the inference code and pre-trained model.
-
-**\[To do list\]**
-
-* Release Describe3D Dataset
 
 ## Getting started
 #### Requirements
